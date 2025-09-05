@@ -1,32 +1,38 @@
+# 🗺️ Adorexrd Resimli Koordinat Botu
+
+Bu proje, [kordinat-bot](https://github.com/adorexrd/kordinat-bot) için geliştirilmiş **ek bir bot**tur.  
+Titayum Casus ekran görüntülerini OCR ile okuyarak koordinat, dünya adı, claim sayısı ve kalan süre bilgilerini çıkartır, MongoDB veritabanındaki hesaplarla karşılaştırır ve en yakın hesapları embed olarak gösterir.
 
 ---
 
-## 🔧 Gereksinimler
+## 📂 Dosyalar
 
-- **Python 3.10+** (Python PATH'e eklenmiş olmalı)
-- **MongoDB** (veritabanı olarak)
-- [adorexrd/kordinat-bot](https://github.com/adorexrd/kordinat-bot) (hesap ekleme/silme için ana koordinat botu.)
-- Discord geliştirici portalından oluşturduğun bir **bot token**
-
-Kullanılan Python kütüphaneleri:
-- `discord.py`
-- `pymongo`
-- `easyocr`
-- `pillow`
-- `numpy`
+- **main.py** → Botun ana kodu  
+- **kurulum.bat** → İlk kurulum için
+- **baslat.bat** → Botu başlatmak için kolay başlatıcı
 
 ---
 
-## 🚀 Kurulum Adımları
+## 🔑 Gereksinimler
 
-1. Önce hesap ekleme/silme yapan **kordinat-bot**'u kur:
-   ```bash
-   git clone https://github.com/adorexrd/kordinat-bot
-   cd kordinat-bot
-   # Oradaki README.md dosyasındaki kurulum adımlarını uygula
+- **Python 3.10+** (PATH'e eklenmiş olmalı)
+- **MongoDB** (hesap verilerini saklamak için)
+- [kordinat-bot](https://github.com/adorexrd/kordinat-bot) → Hesap ekleme/silme işlemleri burada yapılır
+- Discord bot token
 
 ---
 
-## ❗ ÖNEMLİ!
+## ⚙️ Kurulum
+
+1. **kordinat-bot**’u kur ve MongoDB bağlantısını ayarla.
+   Oradaki `/hesapekle` komutu ile hesap ekleyip veritabanını oluştur.
+
+2. Bu botun `main.py` dosyasındaki ayarları yap:
+   ```python
+   TOKEN = "BOT_TOKENINIZ"
+   MONGO_URI = "mongodb://localhost:27017"
+   KODUN_CALISACAGI_KANAL_ID = 123456789012345678
+
+--- ## ❗ ÖNEMLİ! 
 
 - **Botta Hata Olabilir.** (Bu Botu Kuracaksınız Tavsiyem Ana Koordinat Botunuda Kurmanız. Bu Bot Tek Başına Stabil Çalışmayabilir.)
