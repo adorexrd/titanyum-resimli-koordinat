@@ -33,6 +33,8 @@ Titayum Casus ekran görüntülerini OCR ile okuyarak koordinat, dünya adı, cl
    MONGO_URI = "mongodb://localhost:27017"
    KODUN_CALISACAGI_KANAL_ID = 123456789012345678
 
---- ## ❗ ÖNEMLİ! 
+--- 
+
+## ❗ ÖNEMLİ! 
 
 - **Botta Hata Olabilir.** (Bu Botu Kuracaksınız Tavsiyem Ana Koordinat Botunuda Kurmanız. Bu Bot Tek Başına Stabil Çalışmayabilir.)
