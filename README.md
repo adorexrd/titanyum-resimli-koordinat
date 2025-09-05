@@ -1,7 +1,7 @@
 # 🗺️ Adorexrd Resimli Koordinat Botu
 
 Bu proje, [kordinat-bot](https://github.com/adorexrd/kordinat-bot) için geliştirilmiş **ek bir bot**tur.  
-Titayum Casus ekran görüntülerini OCR ile okuyarak koordinat, dünya adı, claim sayısı ve kalan süre bilgilerini çıkartır, MongoDB veritabanındaki hesaplarla karşılaştırır ve en yakın hesapları embed olarak gösterir.
+Sonoyuncu Titanyum Casus ekran görüntülerini OCR ile okuyarak koordinat, dünya adı, claim sayısı ve kalan süre bilgilerini çıkartır, MongoDB veritabanındaki hesaplarla karşılaştırır ve en yakın hesapları embed olarak gösterir.
 
 ---
 
